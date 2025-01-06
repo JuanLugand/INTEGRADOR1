@@ -1,0 +1,71 @@
+/* Tablets (menos de 992px) */
+@media screen and (max-width: 992px) {
+    .login-box {
+        width: 700px;
+    }
+
+    .login-form {
+        padding: 30px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes (menos de 768px) */
+@media screen and (max-width: 768px) {
+    .login-box {
+        flex-direction: column;
+        width: 95%;
+        max-width: 500px;
+    }
+
+    .login-image {
+        height: 200px;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .input-group input {
+        padding: 10px 35px;
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/* Móviles pequeños (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .login-box {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .login-image {
+        height: 150px;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-form p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .input-group input::placeholder {
+        font-size: 13px;
+    }
+    
+    .remember-forgot {
+        font-size: 13px;
+    }
+}

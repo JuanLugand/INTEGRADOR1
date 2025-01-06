@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafetería Don Miguel es una cafetería familiar y de confianza, que ofrece un ambiente limpio y cómodo para trabajar. La atención personalizada y el cuidado de la bebida son prioritarios, y nuestra filosofía de Más que café, un lugar para compartir momentos inolvidables le garantiza que cada cliente disfrute de una experiencia de café de primera calidad.">
+    <meta name="keywords" content="Cafetería Don Miguel, café, bebidas, comida, ambiente, confianza, momentos inolvidables">
+    <meta name="author" content="Juan Miguel">
+    <meta name="copyright" content="Cafetería Don Miguel">
+    <!--Estilos y animaciones-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/animaciones.css">
+    <!--Icono de la pestaña-->
+    <link rel="shortcut icon" href="assets/img/cafeico.png" type="image/x-icon">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafetería Don Miguel</title>
+</head>
+
+<body>
+    <!-- MENU DE NAVEGACION -->
+    <header>
+        <div class="logo-container">
+            <a><img class="logo-container_img" src="./assets/img/logo.png" alt="Taza de Cafe"></a>
+            <a href="#contacto" class="logo-container_texto">Cafetería Don Miguel</a>
+        </div>
+        <nav class="links_container">
+            <label for="menu-toggle" class="menu-label">
+                <img src="assets/img/menu.png" alt="menu">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <!-- NAVBAR LIST -->
+            <ul class="links-container_list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#especialidades">Profile</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contacto">Contact</a></li>
+                <li><a class="btn-signup" href="register.html" target="_blank">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- SECCION HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-container">
+                    <h1 class="hero-container_title">Cafetería Don Miguel</h1>
+                    <p class="hero-container_subtitulo">"Más que café, un lugar para compartir momentos inolvidables."</p>
+                    <div class="btn-container">
+                        <a class="btn-container_signup" href="register.html" target="_blank">Sign Up</a>
+                        <a class="btn-container_login" href="login.html" target="_blank">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION ESPECIALIDADES -->
+        <section class="especialidades" id="especialidades">
+            <h2>Especialidades</h2>
+            <div class="cards-container">
+
+                <div class="cards-container_card-uno content">
+                    <img class="img-cafe" src="./assets/img/taza de cafe 1.jpeg" alt="Cafe con Leche">
+                    <h3>Café con Leche</h3>
+                    <p class="cards-container_parrafo">El café con leche es otro de los tipos de café que más se pide en
+                        cafeterías. Guarda algunas semejanzas con la preparación del café latte macchiato, pero sus
+                        características marcan la diferencia en cuanto a cómo se preparan ambos.</p>
+                    <h6>$20.00</h6>
+                    <ul class="lista-estrellas">
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                    </ul>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+
+                <div class="cards-container_card-dos content">
+                    <img class="img-cafe" src="./assets/img/taza de cafe 2.jpeg" alt="Cafe con Espresso">
+                    <h3>Café Expreso</h3>
+                    <p class="cards-container_parrafo">El café expreso consiste en uno de los tipos de café más básicos
+                        y sencillos. Su elaboración es muy fácil y, únicamente, consiste en realizar la infusión de café
+                        llevando a ebullición el agua para que entren en contacto con los granos de café molidos.</p>
+                    <h6>$10.00</h6>
+                    <ul class="lista-estrellas">
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star"></i></li>
+                        <li class="estrella"><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+
+                <div class="cards-container_card-tres content">
+                    <img class="img-cafe" src="./assets/img/cafeTres.jpeg" alt="Cafe Frapuchino">
+                    <h3>Café Cappuccino</h3>
+                    <p class="cards-container_parrafo">Otro de los tipos de café más habituales, es muy similar al café
+                        con leche, aunque con ligeros matices que hacen de este tipo de bebida una delicia. Un café
+                        cappuccino o capuchino se prepara con un café espresso y partes iguales de leche y crema o
+                        espuma de leche.</p>
+                    <h6>$50.00</h6>
+                    <ul class="lista-estrellas">
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star checked"></i></li>
+                        <li class="estrella"><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION ABOUT US -->
+        <section class="aboutus" id="aboutus">
+            <div class="aboutus_container">
+                <div class="aboutus_content">
+                    <div class="aboutus_titulo">
+                        <h2>Acerca de nosotros</h2>
+                    </div>
+                    <div class="content_section">
+                        <p>Cafetería Don Miguel es una cafetería familiar y de confianza, que ofrece un ambiente limpio y
+                            cómodo para trabajar. La atención personalizada y el cuidado de la bebida son prioritarios, y nuestra
+                            filosofía de "Más que café, un lugar para compartir momentos inolvidables" le garantiza que cada cliente
+                            disfrute de una experiencia de café de primera calidad.
+                        </p>
+                    </div>
+                    <button class="btn_ver-mas">Ver Más</button>
+                    <div class="aboutus_social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="image_section slide-in-css">
+                    <img class="aboutus_img" src="./assets/img/about-us.jpg" alt="Foto de la Cafetería Don Miguel">
+                </div>
+            </div>
+        </section>
+        <!-- SECCION CONTACTO -->
+        <section class="contacto" id="contacto">
+            <h2 class="contacto-titulo">Contactanos</h2>
+            <div class="contacto-container">
+                <div class="contacto-content">
+                    <!-- Contact Form -->
+                    <div class="contacto-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Nombre Completo</label>
+                                    <input type="text" id="firstName" placeholder="Ingresa tu nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Apellido</label>
+                                    <input type="text" id="lastName" placeholder="Ingresa tu apellido">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="tuemail@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Teléfono</label>
+                                <input type="tel" id="mobile" placeholder="+91 987 654 3210">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-send">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="contacto-info">
+                        <h3>Información de Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Curuzú Cuatiá, Corrientes, Argentina</li>
+                            <li><i class="fas fa-envelope"></i>cafeteriadonmiguel@gmail.com</li>
+                            <li><i class="fas fa-phone-alt"></i> +54 9 3794 401388</li>
+                        </ul>
+                        <div class="social-links">
+                            <h4>Seguinos en nuestras redes</h4>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418312.89228034194!2d-58.08323776396496!3d-29.795016730819487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945292f82aa21261%3A0x10119094b42b01e3!2zQ3VydXrDuiBDdWF0acOhLCBDb3JyaWVudGVz!5e0!3m2!1ses!2sar!4v1729286417315!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-section">
+                <img class="footer-logo" src="./assets/img/logo.png" alt="Logo Cafetería Don Miguel">
+                <p>"Más que café, un lugar para compartir momentos inolvidables."</p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-section foo">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#aboutus">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Redes Sociales -->
+            <div class="footer-sociales foo">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 4: Contacto -->
+            <div class="footer-section foo">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Curuzú Cuatiá, Corrientes</p>
+                <p><i class="fas fa-phone"></i> +54 9 3794 401388</p>
+                <p><i class="fas fa-envelope"></i> cafeteriadonmiguel@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Barra de derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cafetería Don Miguel. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Términos y Condiciones</a> 
+                <a href="#">Política de Privacidad</a> 
+                <a href="#">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

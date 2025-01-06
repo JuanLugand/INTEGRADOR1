@@ -1,0 +1,286 @@
+   @keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Animación de slide in con CSS */
+.slide-in-css {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s ease-out forwards;
+    animation-play-state: paused;
+    
+}
+
+
+
+/* Activar la animación cuando la sección esté en el viewport */
+#aboutus:target .slide-in-css,
+#aboutus:hover .slide-in-css {
+    animation-play-state: running;
+}
+
+/* Alternativa: usar intersection observer con CSS */
+@supports (animation-timeline: scroll()) {
+    .slide-in-css {
+        animation-timeline: scroll();
+        animation-range: entry 20% cover 70%;
+    }
+}
+
+/* Animación para el logo */
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-container_img:hover {
+    animation: rotateLogo 2s ease-in-out;
+}
+
+/* Animación para el título del hero */
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para el subtítulo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para los botones */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Aplicando las animaciones */
+.hero-container_title {
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+.hero-container_subtitulo {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.btn-container {
+    opacity: 0;
+    animation: fadeInButton 0.8s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Animación para el título de contacto */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para el formulario */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación para la información de contacto */
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplicando las animaciones */
+.contacto-titulo {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInDown 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.contacto-form {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInFromLeft 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.contacto-info {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideInFromRight 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+/* Para navegadores que no soportan animation-timeline */
+@supports not (animation-timeline: view()) {
+    .contacto-titulo,
+    .contacto-form,
+    .contacto-info {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Animación para los campos del formulario */
+.form-group input,
+.form-group textarea {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación para el botón de enviar */
+.btn-send {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-send:hover {
+    transform: translateY(-3px);
+}
+
+/* Animación para el footer */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para el logo del footer */
+@keyframes pulseScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicando las animaciones al footer */
+.footer-container {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+/* Animación para el logo */
+.footer-logo {
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    animation: pulseScale 1s ease infinite;
+}
+
+/* Animaciones para los enlaces */
+.footer-section a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-section a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.footer-section a:hover::after {
+    width: 100%;
+}
+
+/* Animaciones para los iconos sociales */
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Animación para la barra de derechos de autor */
+.footer-bottom {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+    animation-delay: 0.3s;
+}
+
+/* Fallback para navegadores que no soportan animation-timeline */
+@supports not (animation-timeline: view()) {
+    .footer-container,
+    .footer-bottom {
+        opacity: 1;
+        transform: none;
+    }
+}
+
