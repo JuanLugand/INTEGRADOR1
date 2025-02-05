@@ -1,7 +1,12 @@
 @media (max-width:992px) {
+    body {
+        overflow-x: hidden; /*para quitar el scroll horizontal*/
+        width: 100%;
+    }
 
     .links_container{
         gap: 4px;
+        width: 100%;
     }
 
     .links-container_list{
@@ -11,6 +16,8 @@
         left: 5%;
         right: 5%;
         width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
         flex-direction: column;
         align-items: start;
         background: #ed6928;
@@ -20,7 +27,6 @@
         padding: 45px 30px;
         gap: 25px;
         z-index: 2;
-
     }
 
     .menu-label{
@@ -88,17 +94,19 @@
     }
 
     .aboutus_container {
-        width: 50%;  
+        width: 100%;  
+        padding: 0 15px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        align-items: center;  /* Centra los elementos horizontalmente */
+        align-items: center;  
     }
 
     .aboutus_content {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;  /* Centra los elementos horizontalmente */
+        align-items: center;  
     }
 
     .aboutus_titulo {
@@ -108,7 +116,7 @@
 
     .content_section {
         display: flex;
-        justify-content: center;  /* Centra el contenido horizontalmente */
+        justify-content: center;  
     }
     
      /* Estilos para el footer */
@@ -183,6 +191,23 @@
 /*CELULAR*/
 
 @media (max-width:576px){
+    body {
+        overflow-x: hidden; /*para quitar el scroll horizontal*/
+        width: 100%;
+    }
+
+    .hero-container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+
     /* Ajustes del header y navegación */
     .menu-label {
         margin-left: 50px;
@@ -231,13 +256,6 @@
     }
 
     /* Ajustes del footer */
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        padding: 20px 10px;
-    }
-
     .footer-section {
         width: 100%;
         text-align: center;
@@ -292,3 +310,232 @@
         margin-top: 5px;
     }
 }
+
+
+   
+
+    /*Responsive en 350px*/
+    @media (max-width: 350px) {
+        /* Ajustes generales */
+
+        .logo-container .logo-container_texto{
+            font-size: 2px;
+        }
+        .links-container_list{
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 5%;
+            right: 5%;
+            width: 75%;
+            max-width: 100%;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: start;
+            background: #ed6928;
+            border: 2px solid #f1e0aa;
+            border-top: 0;
+            border-radius: 0px 0px 15px 15px;
+            padding: 45px 30px;
+            gap: 25px;
+            z-index: 2;
+        }
+    
+        .menu-label{
+            display: flex;
+            cursor: pointer;
+            margin-left: 38px;
+        }
+    
+        #menu-toggle:checked ~ .links-container_list{
+            display: flex;
+        }
+    
+        .links_container .links-container_list li .btn-signup{
+            padding: 5px;
+            color: aqua;
+        }
+    
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+    
+        /* Ajustes del header */
+    
+        header .logo-container .logo-container_texto {
+            font-size: 1rem;
+        }
+    
+        /* Ajustes del hero */
+        .hero-container .hero-container_title {
+            font-size: 1.2rem;
+        }
+    
+        .hero-container .hero-container_subtitulo {
+            font-size: 0.9rem;
+        }
+    
+        .hero-container .btn-container_signup,
+        .hero-container .btn-container_login {
+            font-size: 0.8rem;
+            padding: 8px 15px;
+        }
+    
+        /* Ajustes de las cards */
+        .cards-container .content {
+            width: 100%;
+            padding: 10px;
+        }
+    
+        /* Ajustes de especialidades */
+        .especialidades h2 {
+            font-size: 1.1rem;
+        }
+        /*SECCION ABOUTUS*/
+        .aboutus_container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 20px;
+           
+        }
+
+        .aboutus_titulo h2 {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .content_section {
+            text-align: center;
+            padding: 0 10px;
+        
+        }
+
+        .content_section p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* SECCION CONTACTO */
+        .contacto-container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 10px;
+            
+        }
+
+        .contacto-content {
+            width: 100%;
+            gap: 15px;
+        }
+
+        .contacto-info iframe {
+            width: 100%;
+            height: 250px;
+            margin-top: 15px;
+        }
+
+        .contacto-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .contacto-info p {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            font-size: 0.8rem;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        #input-lastName {
+            margin-top: 5px;
+            width: 100%;
+            height: 35px; /* Asegura la misma altura que el input del nombre */
+        }
+
+        .form-group label {
+            font-size: 12px;
+            display: block;
+            height: 20px; /* Altura fija para los labels */
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            font-size: 10px;
+        }
+
+        /*SECCION FOOTER*/
+        .footer-container {
+            width: 100%;
+            padding: 15px 10px;
+            
+        }
+
+        .footer-section {
+            width: 90%;
+            margin: 0 auto;
+            padding: 5px 0;
+            
+        }
+
+        .footer-section h4 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            font-size: 0.8rem;
+            margin: 5px 0;
+        }
+
+        .footer-contacto{
+            flex-direction: column;
+            display: none;
+        }
+
+        .footer-sociales {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 0;
+            
+        }
+
+        .footer-sociales .social-icons {
+            gap: 10px;
+            margin-top: 8px;
+            flex-direction: column;
+        }
+
+        .footer-sociales .social-icons i {
+            font-size: 1.2rem;
+        }
+
+        .footer-bottom {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .footer-bottom p,
+        .legal-links a {
+            font-size: 0.8rem;
+        }
+
+        .legal-links {
+            gap: 8px;
+        }
+    }
