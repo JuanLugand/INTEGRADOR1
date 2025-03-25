@@ -189,7 +189,7 @@ main {
 }
 
 .content {
-    width: 20%;
+    width: calc(20% - 30px);
     margin: 15px;
     float: left;
     text-align: center;
