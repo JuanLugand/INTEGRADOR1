@@ -10,7 +10,6 @@
 }
 
 
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
@@ -35,7 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     height: 70px;
     background-color: #f1e0aa;
     z-index: 1;
@@ -110,16 +109,14 @@ main {
 
 /*SECCION HERO*/
 #hero {
-    position: relative;
+
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
 .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
+
     width: 100%;
     height: 100%;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/cafe-background.jpg);
@@ -130,29 +127,13 @@ main {
 }
 
 .hero-content {
-    position: relative;
+
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-}
-
-.hero-container {
-    padding: 20px;
-}
-
-.hero-container .hero-container_title {
-    font-size: 3rem;
-    text-shadow: #000 1px 0 10px;
-    margin-bottom: 20px;
-}
-
-.hero-container .hero-container_subtitulo {
-    font-size: 1.8rem;
-    text-shadow: #000 1px 0 5px;
-    margin-bottom: 30px;
 }
 
 .hero-container .btn-container_signup,
