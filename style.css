@@ -20,14 +20,6 @@ html {
 }
 
 
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 /*MENU DE NAVEGACION*/
 
 header {
@@ -104,7 +96,6 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-
 }
 
 /*SECCION HERO*/
@@ -112,32 +103,41 @@ main {
 
     height: 100vh;
     width: 100%;
-    overflow: hidden;
-}
-
-.hero-background {
-
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/cafe-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
-}
-
-.hero-content {
-
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #fff;
+    align-items: center;
 }
 
-.hero-container .btn-container_signup,
-.hero-container .btn-container_login {
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.hero-container .hero-container_title{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Poppins';
+
+}
+
+.hero-container .hero-container_subtitulo{
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins';
+}
+
+.btn-container .btn-container_signup,
+.btn-container .btn-container_login{
     background-color: #f1e0aa;
     color: #979516;
     padding: 10px 20px;
@@ -147,16 +147,18 @@ main {
     transition: background-color 0.3s ease;
     display: inline-block;
     margin: 0 10px;
-}
+    
+    
+} 
 
-.hero-container .btn-container_signup:hover,
-.hero-container .btn-container_login:hover {
+.hero-container .btn-container .btn-container_signup:hover,
+.hero-container .btn-container .btn-container_login:hover {
     background-color: #f6ba07;
-}
+    
+    
+} 
 
-.btn-container {
-    margin-top: 20px;
-}
+
 
 
 /*SECCION CATEGORIAS*/

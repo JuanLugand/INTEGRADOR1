@@ -52,19 +52,6 @@
         overflow-x: hidden;
     }
 
-    
-
-    .hero-container .hero-container_title{
-        font-size: 2rem;
-        margin: 15px 0;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .hero-container .hero-container_subtitulo{
-        font-size: 1.2rem;
-    }
-
     .logo-container{
         margin-left: 50px;
     }
@@ -77,9 +64,7 @@
         flex-direction: column;
     }
 
-    .logo-container .logo-container_img{
-        display: none;
-    }
+    
     
     .menu-label{
         margin-right: 100px;
