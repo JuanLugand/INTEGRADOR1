@@ -70,6 +70,15 @@
         margin-right: 100px;
     }
 
+    .cards-container .content{
+        width: 40%;
+    }
+
+    .cards-container .content .img-cafe{
+        width: 38%;
+        height: 38%;
+    }
+
     
 
     
@@ -77,9 +86,12 @@
 }
 
 
-/* @media (max-width:576px){
-    
-} */
+ @media (max-width:576px){
+
+    .logo-container .logo-container_img{
+        display: none;
+    }
+}  
 
 
    
